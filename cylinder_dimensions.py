@@ -41,17 +41,21 @@ def perimeter(radius):
 
 def main():
     # input
-    user_radius = int(input("Enter the radius: "))
-    user_hight = int(input("Enter the hight: "))
+    while True:
+         user_radius_str = input("Enter the radius: ")
+         user_hight_str = input("Enter the hight: ")
 
-    # calling functions
-    try:
-        user_radius = int(user_radius)
-        surface_area(user_radius, user_hight)
-        volume(user_radius, user_hight)
-        perimeter(user_radius)
-    except Exception:
-        print("try")
+        try:
+            user_radius = int(user_radius_str)
+            user_hight = int(user_hight_str)
+            
+            # calling functions
+            surface_area(user_radius_str, user_hight_str)
+            volume(user_radius_str, user_hight_str)
+            perimeter(user_radius_str)
+            break
+        except:
+            print("try")
 
 
 if __name__ == "__main__":
