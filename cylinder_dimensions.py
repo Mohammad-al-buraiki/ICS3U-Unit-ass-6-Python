@@ -13,20 +13,14 @@ def surface_area(radius, hight):
 
     # process
     surface_area = (2*pi*radius**2)+(2*pi*radius*hight)
-
-    # output
-    print("")
-    print("the surface area is {0}.". format(surface_area))
-
+    return
 
 def volume(radius, hight):
     # this function calculates the volume of the cylinder
 
     # process
     volume = pi*radius**2*hight
-
-    # output
-    print("the volume of the cylinder {0}.".format(volume))
+    return
 
 
 def perimeter(radius):
@@ -34,9 +28,7 @@ def perimeter(radius):
 
     # process
     perimeter = 2*pi*radius
-
-    # output
-    print("the perimeter of the cylinder {0}.".format(perimeter))
+    return
 
 
 def main():
@@ -53,6 +45,10 @@ def main():
             surface_area(user_radius_str, user_hight_str)
             volume(user_radius_str, user_hight_str)
             perimeter(user_radius_str)
+            print("the surface area is {0}.". format(surface_area))
+            print("the volume of the cylinder {0}.".format(volume))
+            print("the perimeter of the cylinder {0}.".format(perimeter))
+
             break
         except:
             print("that is invalid input")
