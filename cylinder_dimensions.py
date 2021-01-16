@@ -54,7 +54,7 @@ def main():
                   format(surface_area_calculated))
             print("the volume of the cylinder {0:.2f}mm³.".
                   format(volume_calculated))
-            print("the perimeter of the cylinder {0:.2f}mm².".
+            print("the perimeter of the cylinder {0:.2f}mm.".
                   format(perimeter_calculated))
 
             break
